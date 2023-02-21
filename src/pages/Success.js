@@ -42,8 +42,11 @@ function Success() {
         <>
             {Object.keys(user).length !== 0 ?
                 <>
-                    {/* <h1>Success</h1>
-                        <button onClick={() => signOutUser()}>Sign out</button> */}
+                {/* <div className="text-center items-center m-auto">
+                    <h1 className="text-2xl font-bold mt-16">Successful login</h1>
+                    <p>Welcome</p>
+                    <button onClick={() => signOutUser()} className="bg-green-500 p-2 mt-8 rounded-lg text-white">Sign out</button>
+                </div> */}
                     <Home />
                 </>
                 :

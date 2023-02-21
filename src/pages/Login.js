@@ -1,3 +1,4 @@
+import '../App.css';
 import { createClient } from '@supabase/supabase-js';
 import { Auth, ThemeSupa } from '@supabase/auth-ui-react';
 import { useNavigate } from 'react-router-dom';
@@ -17,6 +18,7 @@ function Login() {
     if (event !== "SIGNED OUT") {
       //send user to store page after successful sign in
       navigate("/store");
+      // navigate("/success");
     } else {
       //back to home page
       navigate("/");
@@ -42,7 +44,7 @@ function Login() {
                 <Auth
                   supabaseClient={supabase}
                   appearance={{ theme: ThemeSupa }}
-                  theme="ligh"
+                  theme="light"
                   providers={["google"]}
                 />
               </div>
@@ -50,6 +52,19 @@ function Login() {
           </div>
         </div>
       </div>
+
+      {/* <div className="w-1/4 text-lg items-center container px-5 py-24 mx-auto">
+        <h1 className="text-xl font-semibold">
+          Login/Signup to Your Account
+        </h1>
+        <Auth
+          supabaseClient={supabase}
+          appearance={{ theme: ThemeSupa }}
+          theme="light"
+        />
+      </div> */}
+
+
     </>
   );
 }

@@ -7,7 +7,7 @@ This is a shopping hub platform.
 
 
 ## Frontend Interface of my N-Academy Web Application
-![MyShopping Paddy Design](.jpeg) 
+![MyShopping Paddy Design](shoppy.png) 
 
 
 ## Technologies Used
@@ -28,3 +28,7 @@ This is a shopping hub platform.
 - Collection
 - Contact
 - Logout
+
+
+## Live link
+
