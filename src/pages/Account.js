@@ -11,7 +11,7 @@ import "../styles/account.css";
 const Account = () => {
     const [word, setWord] = useState(<>
         <h2 className="tech-title">Oops! Nothing here yet</h2>
-        <img src="" className="w-8 h-8" alt="dummy nothing here image" />
+        <img src="" className="w-8 h-8" alt="dummy nothing here" />
     </>
     )
 
@@ -62,7 +62,7 @@ const Account = () => {
                                 <input type="checkbox" className="" />
                                 <label htmlFor="remember"> Enable Dark Mode</label>
                             </div>
-                            <a href="" target="_blank" rel="noreferrer"><button className="port-btn">button</button></a>
+                            <a href="/" target="_blank" rel="noreferrer"><button className="port-btn">button</button></a>
                         </>
                     )} className='service-name'><FaCog /><span>Settings</span>
                     </section>

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { createClient } from '@supabase/supabase-js';
-import { Auth, ThemeSupa } from '@supabase/auth-ui-react';
 import { useNavigate } from 'react-router-dom';
 import Home from './Home';
 import NotLoggedIn from './NotLoggedIn';
@@ -19,7 +18,6 @@ function Success() {
     useEffect(() => {
         async function getUserData() {
             await supabase.auth.getUser().then((value) => {
-                //value.data.user
                 if (value.data?.user) {
                     console.log(value.data.user)
                     setUser(value.data.user);
@@ -30,29 +28,14 @@ function Success() {
     }, [])
 
 
-    const email = user?.user_metadata?.email;
-
-
-    async function signOutUser() {
-        const { error } = await supabase.auth.signOut();
-        navigate("/")
-    }
-
     return (
         <>
             {Object.keys(user).length !== 0 ?
                 <>
-                {/* <div className="text-center items-center m-auto">
-                    <h1 className="text-2xl font-bold mt-16">Successful login</h1>
-                    <p>Welcome</p>
-                    <button onClick={() => signOutUser()} className="bg-green-500 p-2 mt-8 rounded-lg text-white">Sign out</button>
-                </div> */}
                     <Home />
                 </>
                 :
                 <>
-                    {/* <h1>User is not logged in</h1>
-                    <button onClick={() => { navigate("/") }}>Go back home</button> */}
                     <NotLoggedIn />
                 </>
             }

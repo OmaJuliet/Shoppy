@@ -15,10 +15,10 @@ const NotLoggedIn = () => {
     const navigate = useNavigate();
 
 
-    async function signOutUser() {
-        const { error } = await supabase.auth.signOut();
-        navigate("/")
-    }
+    // async function signOutUser() {
+    //     const { error } = await supabase.auth.signOut();
+    //     navigate("/")
+    // }
 
 
     return (

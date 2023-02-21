@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import Slider from 'react-slick'
-import { FaArrowLeft, FaArrowRight, FaStar } from 'react-icons/fa';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import "../styles/comingsoon.css";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -44,7 +44,7 @@ function ComingSoon() {
     };
 
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-    const [year] = useState(new Date().getFullYear());
+    // const [year] = useState(new Date().getFullYear());
 
     useEffect(() => {
         const timer = setTimeout(() => {

@@ -90,22 +90,22 @@ const Cart = ({ cart, setCart, handleChange }) => {
 
                                         <div className="flex flex-wrap -m-4">
                                             <div className="div-img lg:w-1/4 md:w-1/2 p-4 w-full">
-                                                <a href="" rel="noopener noreferrer" className="block relative h-48 rounded overflow-hidden">
+                                                <a href="/store" rel="noopener noreferrer" className="block relative h-48 rounded overflow-hidden">
                                                     <img alt="ecommerce" className="border-2 border-green-500 object-cover object-center w-full h-full block" src={pay1} />
                                                 </a>
                                             </div>
                                             <div className="div-img lg:w-1/4 md:w-1/2 p-4 w-full">
-                                                <a href="" rel="noopener noreferrer" className="block relative h-48 rounded overflow-hidden">
+                                                <a href="/store" rel="noopener noreferrer" className="block relative h-48 rounded overflow-hidden">
                                                     <img alt="ecommerce" className="border-2 border-green-500 object-cover object-center w-full h-full block" src={pay2} />
                                                 </a>
                                             </div>
                                             <div className="div-img lg:w-1/4 md:w-1/2 p-4 w-full">
-                                                <a href="" rel="noopener noreferrer" className="block relative h-48 rounded overflow-hidden">
+                                                <a href="/store" rel="noopener noreferrer" className="block relative h-48 rounded overflow-hidden">
                                                     <img alt="ecommerce" className="border-2 border-green-500 object-cover object-center w-full h-full block" src={pay3} />
                                                 </a>
                                             </div>
                                             <div className="div-img lg:w-1/4 md:w-1/2 p-4 w-full">
-                                                <a href="" rel="noopener noreferrer" className="block relative h-48 rounded overflow-hidden">
+                                                <a href="/store" rel="noopener noreferrer" className="block relative h-48 rounded overflow-hidden">
                                                     <img alt="ecommerce" className="border-2 border-green-500 object-cover object-center w-full h-full block" src={pay4} />
                                                 </a>
                                             </div>

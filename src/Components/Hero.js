@@ -6,7 +6,6 @@ import hero from "../images/hero.jpg";
 
 
 
-
 const supabase = createClient(
     'https://amlztwycpfhonwfvzhca.supabase.co',
     'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFtbHp0d3ljcGZob253ZnZ6aGNhIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzQ0ODI1NTksImV4cCI6MTk5MDA1ODU1OX0.NqV1vbExN3jpY11rTWPN4fEvEw-m5xjNmHVh2GwGIsI'
@@ -18,7 +17,7 @@ const Hero = () => {
 
 
     async function signOutUser() {
-        const { error } = await supabase.auth.signOut();
+        // const { error } = await supabase.auth.signOut();
         navigate("/")
     }
 
