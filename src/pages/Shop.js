@@ -14,7 +14,7 @@ const App = () => {
     const handleClick = (item) => {
         if (cart.indexOf(item) !== -1) return;
         setCart([...cart, item]);
-        toast.success((item.title) + ' ' + 'has been added to cart', {
+        toast.success('Item has been added to cart', {
             position: "top-center",
             autoClose: 2000,
             hideProgressBar: false,

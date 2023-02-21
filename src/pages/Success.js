@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { createClient } from '@supabase/supabase-js';
-import { useNavigate } from 'react-router-dom';
 import Home from './Home';
 import NotLoggedIn from './NotLoggedIn';
 
@@ -13,7 +12,6 @@ const supabase = createClient(
 
 function Success() {
     const [user, setUser] = useState({});
-    const navigate = useNavigate();
 
     useEffect(() => {
         async function getUserData() {
