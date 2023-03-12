@@ -6,7 +6,7 @@ This is a shopping hub platform.
 
 
 
-## Frontend Interface of my N-Academy Web Application
+## Frontend Interface of Shoppy Web Application
 ![MyShopping Paddy Design](shoppy.png) 
 
 
